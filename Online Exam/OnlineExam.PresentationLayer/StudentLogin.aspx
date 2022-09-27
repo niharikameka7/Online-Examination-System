@@ -17,7 +17,7 @@
                 <asp:Label ID="Label_studentid" runat="server" ForeColor="#990099" Text="Enter Student ID :" Font-Size="Medium"></asp:Label>
 &nbsp;&nbsp;&nbsp;
                 <asp:TextBox ID="txt_studentid" runat="server" Height="40px" Width="203px"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txt_studentid" ErrorMessage="Please Enter Student id" Font-Size="Medium" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator_studentid" runat="server" ControlToValidate="txt_studentid" ErrorMessage="Please Enter Student id" Font-Size="Medium" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>

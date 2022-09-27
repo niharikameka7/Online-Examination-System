@@ -21,7 +21,7 @@
                 <asp:Label ID="Label_adminid" runat="server" ForeColor="#990099" Text="Enter Admin ID :" Font-Size="Medium"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
                 <asp:TextBox ID="txt_adminid" runat="server" Height="36px" Width="197px"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txt_adminid" ErrorMessage="Please Enter Admin id" Font-Size="Medium" ForeColor="Red"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator_adminid" runat="server" ControlToValidate="txt_adminid" ErrorMessage="Please Enter Admin id" Font-Size="Medium" ForeColor="Red"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>

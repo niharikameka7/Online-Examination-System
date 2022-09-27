@@ -1,4 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AddAdmin.aspx.cs" Inherits="OnlineExam.PresentationLayer.AddAdmin" %>
+﻿
+<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AddAdmin.aspx.cs" Inherits="OnlineExam.PresentationLayer.AddAdmin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <br />
   <a href="AdminContent.aspx" id="back_btn" style="display:inline-block;text-align:center;width:166px;font-size:30px; height:57px; background-color:darkviolet;color:white" >Back</a>
@@ -58,7 +59,7 @@
             <td>
                 <asp:Label ID="Label_mobile" runat="server" ForeColor="#990099" Text="Mobile Number :" Font-Size="Medium"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="mobile" runat="server" TextMode="Phone" Height="36px" Width="196px"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="mobile" ErrorMessage="Please Enter Mobile Number" Font-Size="Medium" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator_mobile" runat="server" ControlToValidate="mobile" ErrorMessage="Please Enter Mobile Number" Font-Size="Medium" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
                 <br />
                 <br />
             </td>
@@ -68,7 +69,7 @@
                 <asp:Label ID="Label_email" runat="server" ForeColor="#990099" Text="Enter Email :" Font-Size="Medium"></asp:Label>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
                 <asp:TextBox ID="txt_email" runat="server" TextMode="Email" Height="40px" style="margin-top:12px" Width="195px"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txt_email" ErrorMessage="Please Enter Email" Font-Size="Medium" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator_email" runat="server" ControlToValidate="txt_email" ErrorMessage="Please Enter Email" Font-Size="Medium" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
                 <br />
                 <br />
             </td>
@@ -87,7 +88,9 @@
             <td style="height: 45px">
                 <asp:Label ID="lbl_cnewpw" runat="server" ForeColor="#990099" Text="Confirm New Password:" Font-Size="Medium"></asp:Label>
                 <asp:TextBox ID="txt_cnewpw" runat="server" TextMode="Password" Height="36px" Width="193px" style="margin-left: 12px"></asp:TextBox>
-                <asp:CompareValidator ID="pwValidator" runat="server" ControlToCompare="txt_newpw" ControlToValidate="txt_cnewpw" ErrorMessage="Password mismatched" SetFocusOnError="True" ForeColor="Red"></asp:CompareValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator_confirmpw" runat="server" ControlToValidate="txt_cnewpw" ErrorMessage="Please Re-Enter Password" Font-Size="Medium" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
+                <br />
+                <asp:CompareValidator ID="pwValidator" runat="server" ControlToCompare="txt_newpw" ControlToValidate="txt_cnewpw" ErrorMessage="Password mismatched" SetFocusOnError="True" ForeColor="Red" Font-Size="Medium"></asp:CompareValidator>
             </td>
         </tr>
         <tr>

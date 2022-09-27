@@ -150,13 +150,13 @@ namespace OnlineExam.PresentationLayer
         protected global::System.Web.UI.WebControls.TextBox mobile;
 
         /// <summary>
-        /// RequiredFieldValidator3 control.
+        /// RequiredFieldValidator_mobile control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator_mobile;
 
         /// <summary>
         /// Label_email control.
@@ -177,13 +177,13 @@ namespace OnlineExam.PresentationLayer
         protected global::System.Web.UI.WebControls.TextBox txt_email;
 
         /// <summary>
-        /// RequiredFieldValidator4 control.
+        /// RequiredFieldValidator_email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator_email;
 
         /// <summary>
         /// lbl_newpw control.
@@ -229,6 +229,15 @@ namespace OnlineExam.PresentationLayer
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_cnewpw;
+
+        /// <summary>
+        /// RequiredFieldValidator_confirmpw control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator_confirmpw;
 
         /// <summary>
         /// pwValidator control.

@@ -105,7 +105,9 @@
             <td style="height: 45px; width: 694px;">
                 <asp:Label ID="Label_confirmpw" runat="server" ForeColor="#990099" Text="Confirm Password :" Font-Size="Medium"></asp:Label>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="stu_cpw" runat="server" TextMode="Password" Height="37px" Width="157px"></asp:TextBox>
-                <asp:CompareValidator ID="pwValidator" runat="server" ControlToCompare="txt_pw" ControlToValidate="stu_cpw" ErrorMessage="Password mismatched" SetFocusOnError="True" ForeColor="Red"></asp:CompareValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator_confirmpw" runat="server" ControlToValidate="stu_cpw" ErrorMessage="Please Re-Enter Password" Font-Size="Medium" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
+                <br />
+                <asp:CompareValidator ID="pwValidator" runat="server" ControlToCompare="txt_pw" ControlToValidate="stu_cpw" ErrorMessage="Password mismatched" SetFocusOnError="True" ForeColor="Red" Font-Size="Medium"></asp:CompareValidator>
                 <br />
             </td>
             <td style="height: 45px">
